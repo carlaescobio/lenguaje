@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Hi, this is a template free, please suscribe to my chanel
+AlexCG Design, Thank you, I hope this template helps you -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web completa</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+<style>
+
+</style>
+
+<body class="hidden">
+   
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/icons8-escudo-100.png" alt="">
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Calificaciones</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Alumnado</a>
+         
+                </div>
+                <div class="icono" id="open">
+                
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h2>IES DORZAL</h2>
+        </div>
+    </header>
+    <main>
+
+        <section class="work contenedor" id="trabajo">
+            <h3>Listado</h3>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Principal</li>
+                    <li class="filter" data-nombre='alumnos'>Alumnos</li>
+                    <li class="filter" data-nombre='calificaciones'>Calificaciones</li>
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work alumnos">
+                   
+                    <div class="img-work alumnos">
+                        <img src="img/perfil-del-usuario.png" alt="">
+                        
+                        
+                    </div>
+                    <div class="textos-work">
+                        <h4>Alumnos</h4>
+                    </div>
+                </div>
+               
+                <div class="cont-work calificaciones">
+                    
+      <p id='showData'></p>
+      <p id='msg'></p>
+                    <div class="img-work calificaciones">
+                        <img src="img/9fc5c0cd81aefc439a703d6a438e81ef-doodle-de-notas-escolares.png" alt="" onclick='tableFromJson()'>
+                        <script>
+                            function tableFromJson() {
+                              var myBooks = [
+                                {'Nombre': 'Daniela', 'Apellidos': 'Pérez Gómez',
+                                  'Matemáticas': 8+' Notable','Filosofía': 9+' Sobresaliente','Lengua':4+' Insuficiente','Inglés':7+' Notable','Historia':5+' Suficiente ','Economía':5+' Suficiente'
+                                },
+                                {'Nombre': 'Julia', 'Apellidos': 'Rodriguez Castor',
+                                  'Matemáticas': 5+' Suficiente','Filosofía': 2+' Muy deficiente','Lengua':7+' Notable','Inglés':5+' Suficiente','Historia':4+' Insuficiente ','Economía':5+' Suficiente'
+                                },
+                                {'Nombre': 'David', 'Apellidos': 'García Ramiro',
+                                  'Matemáticas': 5+' Suficiente','Filosofía': 6+' Bien','Lengua':4+' Insuficiente','Inglés':7+' Notable','Historia':5+' Suficiente ','Economía':5+' Suficiente'
+                                },
+                                {'Nombre': 'Pablo', 'Apellidos': 'Jiménez Duero',
+                                  'Matemáticas': 8+' Notable','Filosofía': 7+' Notable','Lengua':9+' Sobresaliente','Inglés':10+' Sobresaliente','Historia':8+' Notable ','Economía':8+' Notable'
+                                },
+                                {'Nombre': 'Alejandro', 'Apellidos': 'Merino Díaz',
+                                  'Matemáticas': 4+' Insuficiente','Filosofía': 5+' Suficiente','Lengua':6+' Bien','Inglés':8+' Notable','Historia':5+' Suficiente ','Economía':4+' Insuficiente'
+                                },
+                                {'Nombre': 'Iker', 'Apellidos': 'Martin López',
+                                  'Matemáticas': 3+' Muy deficiente','Filosofía': 4+' Insuficiente','Lengua':5+' Suficiente','Inglés':4+' Insuficiente','Historia':2+' Muy deficiente ','Economía':5+' Suficiente'
+                                },
+                                {'Nombre': 'Marina', 'Apellidos': 'Castillo Girón',
+                                  'Matemáticas': 6+' Bien','Filosofía': 5+' Suficiente','Lengua':4+' Suficiente','Inglés':5+' Suficiente','Historia':6+' Bien ','Economía':6+' Bien'
+                                },
+                                {'Nombre': 'Claudia', 'Apellidos': 'Quiles Casado',
+                                  'Matemáticas': 7+' Notable','Filosofía': 8+' Notable','Lengua':8+' Notable','Inglés':7+' Notable','Historia':6+' Bien ','Economía':7+' Notable'
+                                },
+                                {'Nombre': 'Patricia', 'Apellidos': 'Sánchez Valentin',
+                                  'Matemáticas': 7+' Notable','Filosofía': 6+' Bien','Lengua':7+' Notable','Inglés':8+' Notable','Historia':7+' Notable ','Economía':6+' Bien'
+                                },
+                                {'Nombre': 'Diego', 'Apellidos': 'Muñoz Blas',
+                                  'Matemáticas': 8+' Notable','Filosofía': 5+' Suficiente','Lengua':6+' Bien','Inglés':8+' Notable','Historia':6+' Bien ','Economía':6+' Bien'
+                                },
+                                {'Nombre': 'Juan Carlos', 'Apellidos': 'Negrín De La Fe',
+                                  'Matemáticas': 9+' Sobresaliente','Filosofía': 8+' Notable','Lengua':8+' Notable','Inglés':9+' Sobresaliente','Historia':8+' Notable ','Economía':8+' Notable'
+                                },
+                                {'Nombre': 'Maria', 'Apellidos': 'Melero Bellido',
+                                  'Matemáticas': 9+' Sobresaliente','Filosofía': 8+' Notable','Lengua':9+' Sobresaliente','Inglés':9+' Sobresaliente','Historia':9+' Sobresaliente ','Economía':9+' Sobresaliente'
+                                },
+                                {'Nombre': 'Haizea', 'Apellidos': 'Guisado Vaquero',
+                                  'Matemáticas': 9+' Sobresaliente','Filosofía': 9+' Sobresaliente','Lengua':10+' Sobresaliente','Inglés':10+' Sobresaliente','Historia':9+' Sobresaliente ','Economía':9+' Sobresaliente'
+                                },
+                              ]
+                            
+                              var col = [];
+                              for (var i = 0; i < myBooks.length; i++) {
+                                for (var key in myBooks[i]) {
+                                  if (col.indexOf(key) === -1) {
+                                    col.push(key);
+                                  }
+                                }
+                              }
+                            
+                              // Create a table.
+                              var table = document.createElement("table");
+                          
+                              var tr = table.insertRow(-1);                   
+                            
+                              for (var i = 0; i < col.length; i++) {
+                                var th = document.createElement("th");      
+                                th.innerHTML = col[i];
+                                tr.appendChild(th);
+                              }
+                            
+                              // add json data to the table as rows.
+                              for (var i = 0; i < myBooks.length; i++) {
+                            
+                                tr = table.insertRow(-1);
+                            
+                                for (var j = 0; j < col.length; j++) {
+                                  var tabCell = tr.insertCell(-1);
+                                  tabCell.innerHTML = myBooks[i][col[j]];
+                                }
+                              }
+                            
+                        
+                              var divShowData = document.getElementById('showData');
+                              divShowData.innerHTML = "";
+                              divShowData.appendChild(table);
+                           
+                                }
+                        
+                            </script>
+                    </div>
+                    <div class="textos-work">
+                        <h4 >Calificaciones</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+</html>
